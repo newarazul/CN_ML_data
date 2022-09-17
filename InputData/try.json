@@ -1,0 +1,49 @@
+"model_CN": {
+	"type_map":	["C", "N"],
+	"descriptor" :{
+		"type":		"se_a",
+		"rcut":		3.00,
+		"sel" :		[11,23],
+		"neuron":	[25,50,100],
+		"axis_neuron":	16,
+		"resnet_dt":	false,
+		"seed":		1
+	},
+}
+	"learning_rate" : {
+		"type":		"exp",
+		"start_lr":	0.005,
+		"decay_steps":	5000,
+		"decay_rate":	0.95
+		},
+	"loss" : {
+		"start_pref_e":	0.02,
+		"limit_pref_e":	1,
+		"start_pref_f":	1000,
+		"limit_pref_f":	1,
+		"start_pref_v": 0,
+		"limit_pref_v":	0
+		},
+	"training" : {
+		"systems":	["."],
+		"set_prefix":	"set",
+		"stop_batch":	10000,
+		"batch_size":	1,
+
+		"seed":		1,
+		
+		"disp_file":	"run_information.out",
+		"disp_freq":	100,
+		"numb_test":	10,
+		"save_freq":	1000,
+		"save_ckpt":	"save_model.cpkt",
+		"load_ckpt":	"save_model.cpkt",
+		"disp_training":true,
+		"time_training":true,
+		"profilling":	true,
+		"profilling_file":"timeline.json"
+	}
+
+	
+	
+		

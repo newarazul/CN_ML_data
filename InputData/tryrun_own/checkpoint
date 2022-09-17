@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/fzysk/deepmd_workflow/prepareddata/tryrun_own/save_model.cpkt"
+all_model_checkpoint_paths: "/home/fzysk/deepmd_workflow/prepareddata/tryrun_own/save_model.cpkt"
